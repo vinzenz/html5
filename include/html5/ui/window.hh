@@ -9,7 +9,7 @@ public:
 	window( application & a );
 	virtual ~window();
 
-    void show();
+	void show();
 	void hide();
 
 	void load( uri const & );

@@ -9,7 +9,7 @@ public:
 	dialog( application & a );
 	virtual ~dialog();
 
-    void show();
+	void show();
 	void hide();
 
 	void load( uri const & );
