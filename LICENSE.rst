@@ -1,5 +1,9 @@
-	License: 	BSD 3-Clause
-	Source: 	http://www.opensource.org/licenses/BSD-3-Clause
+
++-----------+-----------------------------------------------+
+|License: 	|BSD 3-Clause                                   |
++-----------+-----------------------------------------------+
+|Source: 	|http://www.opensource.org/licenses/BSD-3-Clause|
++-----------+-----------------------------------------------+
 
 * Copyright (c) 2012, Vinzenz Feenstra
 * Copyright (c) 2012, Richard Marko
