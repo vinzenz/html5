@@ -13,7 +13,7 @@ def _build_include_guard(sections):
 	guard = ""
 	for section in sections:
 		guard = "%s_%s" % ( guard, section.upper() )
-	return "%s_HPP_" % guard
+	return "%s_HH_" % guard
 
 def _build_namespace_begin(sections):
 	namespaces = []
@@ -34,7 +34,7 @@ def _format_file(sections):
 	tpl = tpl.replace('%NAMESPACE_BEGIN%', _build_namespace_begin(sections) )
 	tpl = tpl.replace('%NAMESPACE_END%', _build_namespace_end(sections) )
 
-	hdrf = open(build_target_file_path(sections, 'hpp', EVIPP_HEADER_GENERATOR_BASE_DIR), 'w')
+	hdrf = open(build_target_file_path(sections, 'hh', EVIPP_HEADER_GENERATOR_BASE_DIR), 'w')
 	hdrf.write(tpl)
 	hdrf.close()
 
