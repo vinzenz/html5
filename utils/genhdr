@@ -1,0 +1,18 @@
+#!/bin/sh
+
+while true
+do	
+	if [ ${PWD} = "/" ]
+	then
+		echo "Reached root. Stopping"
+		break
+	fi
+
+	if [ -d ${PWD}/.git ]
+	then
+		python $PWD/utils/generate/generator/header.py $*
+		break
+	fi
+	# Going one level deeper
+	cd ..
+done
