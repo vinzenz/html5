@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="html5app">
+  <VirtualDirectory Name="app">
+    <File Name="../app/html5_app.cc"/>
+  </VirtualDirectory>
+  <Settings Type="Executable">
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable">
+      <General OutputFile="html5app" IntermediateDirectory="obj/Debug/html5app" Command="./html5app" CommandArguments="" WorkingDirectory="." PauseExecWhenProcTerminates="yes"/>
+      <Compiler Required="yes" Options="-g;-std=c++0x">
+        <IncludePath Value="../include"/>
+        <Preprocessor Value="DEBUG"/>
+      </Compiler>
+      <Linker Required="yes" Options="">
+        <LibraryPath Value="." />
+        <Library Value="html5" />
+      </Linker>
+      <ResourceCompiler Required="no" Options=""/>
+      <CustomBuild Enabled="no">
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory></WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild></CustomPreBuild>
+      </AdditionalRules>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable">
+      <General OutputFile="html5app" IntermediateDirectory="obj/Release/html5app" Command="./html5app" CommandArguments="" WorkingDirectory="." PauseExecWhenProcTerminates="yes"/>
+      <Compiler Required="yes" Options="-O2;-std=c++0x">
+        <IncludePath Value="../include"/>
+        <Preprocessor Value="NDEBUG"/>
+      </Compiler>
+      <Linker Required="yes" Options="-s">
+        <LibraryPath Value="." />
+        <Library Value="html5" />
+      </Linker>
+      <ResourceCompiler Required="no" Options=""/>
+      <CustomBuild Enabled="no">
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory></WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild></CustomPreBuild>
+      </AdditionalRules>
+    </Configuration>
+  </Settings>
+  <Dependencies name="Debug">
+    <Project Name="html5"/>
+  </Dependencies>
+  <Dependencies name="Release">
+    <Project Name="html5"/>
+  </Dependencies>
+</CodeLite_Project>

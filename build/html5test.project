@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeLite_Project Name="html5test">
+  <Settings Type="Executable">
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable">
+      <General OutputFile="html5test" IntermediateDirectory="obj/Debug/html5test" Command="./html5test" CommandArguments="" WorkingDirectory="." PauseExecWhenProcTerminates="yes"/>
+      <Compiler Required="yes" Options="-g;-std=c++0x">
+        <IncludePath Value="../unittest"/>
+        <IncludePath Value="../include"/>
+        <IncludePath Value="../external/tut"/>
+        <Preprocessor Value="DEBUG"/>
+      </Compiler>
+      <Linker Required="yes" Options="">
+        <LibraryPath Value="." />
+        <Library Value="html5" />
+      </Linker>
+      <ResourceCompiler Required="no" Options=""/>
+      <PostBuild>
+        <Command Enabled="yes">./html5test regression</Command>
+      </PostBuild>
+      <CustomBuild Enabled="no">
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory></WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild></CustomPreBuild>
+      </AdditionalRules>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Executable">
+      <General OutputFile="html5test" IntermediateDirectory="obj/Release/html5test" Command="./html5test" CommandArguments="" WorkingDirectory="." PauseExecWhenProcTerminates="yes"/>
+      <Compiler Required="yes" Options="-O2;-std=c++0x">
+        <IncludePath Value="../unittest"/>
+        <IncludePath Value="../include"/>
+        <IncludePath Value="../external/tut"/>
+        <Preprocessor Value="NDEBUG"/>
+      </Compiler>
+      <Linker Required="yes" Options="-s">
+        <LibraryPath Value="." />
+        <Library Value="html5" />
+      </Linker>
+      <ResourceCompiler Required="no" Options=""/>
+      <PostBuild>
+        <Command Enabled="yes">./html5test regression</Command>
+      </PostBuild>
+      <CustomBuild Enabled="no">
+        <CleanCommand></CleanCommand>
+        <BuildCommand></BuildCommand>
+        <SingleFileCommand></SingleFileCommand>
+        <MakefileGenerationCommand></MakefileGenerationCommand>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory></WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild></CustomPostBuild>
+        <CustomPreBuild></CustomPreBuild>
+      </AdditionalRules>
+    </Configuration>
+  </Settings>
+  <Dependencies name="Debug">
+    <Project Name="html5"/>
+  </Dependencies>
+  <Dependencies name="Release">
+    <Project Name="html5"/>
+  </Dependencies>
+</CodeLite_Project>
