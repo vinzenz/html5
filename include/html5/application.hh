@@ -4,6 +4,8 @@
 #include <html5/types/string.hh>
 
 namespace html5 {
+struct event{};
+struct events_map {};
 
 class application {
 public:
@@ -11,7 +13,7 @@ public:
 	virtual ~application();
 
 	virtual void on( events_map & e );
-	virtual void on( string const & name, event & e );
+	virtual void on( types::string const & name, event & e );
 	virtual events_map & on();
 };
 
